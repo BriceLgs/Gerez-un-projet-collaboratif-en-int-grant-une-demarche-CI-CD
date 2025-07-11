@@ -17,7 +17,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<sonar.projectKey>BobApp</sonar.projectKey>
-    <sonar.organization>forza-org</sonar.organization>
+    <sonar.organization>Brice-opc-org</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
