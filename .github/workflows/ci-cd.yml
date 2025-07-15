@@ -47,6 +47,10 @@ jobs:
       - name: Install front-end dependencies
         run: cd front && npm install
 
+      # test
+      - name: Verify Angular CLI
+        run: cd front && npm install @angular/cli && export PATH=$PATH:./node_modules/.bin
+
       # tests front
       - name: Run front-end tests
         run: cd front && npm test -- --watch=false --browsers=ChromeHeadless
