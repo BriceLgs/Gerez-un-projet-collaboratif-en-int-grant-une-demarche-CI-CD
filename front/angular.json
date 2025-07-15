@@ -69,15 +69,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "project-name:build",
-            "proxyConfig": "src/proxy.config.json"
+            "proxyConfig": "src/proxy.config.json",
+            "buildTarget": "project-name:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bobapp:build:production"
+              "buildTarget": "bobapp:build:production"
             },
             "development": {
-              "browserTarget": "bobapp:build:development"
+              "buildTarget": "bobapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bobapp:build"
+            "buildTarget": "bobapp:build"
           }
         },
         "test": {
