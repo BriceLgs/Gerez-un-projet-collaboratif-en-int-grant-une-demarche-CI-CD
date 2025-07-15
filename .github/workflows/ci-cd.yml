@@ -104,7 +104,7 @@ jobs:
       - name: Build and push Docker images
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          docker build -t briceLgs/bobapp-back:latest ./back
-          docker build -t briceLgs/bobapp-front:latest ./front
-          docker push briceLgs/bobapp-back:latest
-          docker push briceLgs/bobapp-front:latest
+          docker build -t bricelgs/bobapp-back:latest ./back
+          docker build -t bricelgs/bobapp-front:latest ./front
+          docker push bricelgs/bobapp-back:latest
+          docker push bricelgs/bobapp-front:latest
