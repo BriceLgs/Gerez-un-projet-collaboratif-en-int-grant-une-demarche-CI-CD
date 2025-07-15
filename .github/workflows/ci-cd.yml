@@ -47,7 +47,7 @@ jobs:
       - name: Install front-end dependencies
         run: cd front && npm install
 
-      # test
+      # Verification Angular CLI
       - name: Verify Angular CLI
         run: cd front && npm install @angular/cli && export PATH=$PATH:./node_modules/.bin
 
@@ -82,7 +82,7 @@ jobs:
           cd back
           mvn jacoco:report
           cd ../front
-          ng test --no-watch --code-coverage --browsers=ChromeHeadless
+          ./node_modules/.bin/ng test --no-watch --code-coverage --browsers=ChromeHeadless
 
       # Build back
       - name: Build back-end
