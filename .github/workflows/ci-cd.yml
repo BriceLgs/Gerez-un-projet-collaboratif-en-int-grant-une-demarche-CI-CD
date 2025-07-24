@@ -53,7 +53,7 @@ jobs:
 
       # tests front
       - name: Run front-end tests
-        run: cd front && npm test -- --watch=false --browsers=ChromeHeadless
+        run: cd front && npm test -- --no-watch --no-progress --coverage --browsers=ChromeHeadless
 
       # Installation back
       - name: Install back-end dependencies
@@ -82,7 +82,7 @@ jobs:
           cd back
           mvn jacoco:report
           cd ../front
-          ./node_modules/.bin/ng test --no-watch --code-coverage --browsers=ChromeHeadless
+          npm run test -- --no-watch --no-progress --coverage --browsers=ChromeHeadless
 
       # Build back
       - name: Build back-end
