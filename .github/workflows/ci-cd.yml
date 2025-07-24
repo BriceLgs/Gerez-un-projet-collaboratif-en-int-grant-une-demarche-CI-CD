@@ -53,7 +53,7 @@ jobs:
 
       # tests front
       - name: Run front-end tests
-        run: cd front && npm test -- --no-watch --no-progress --coverage --browsers=ChromeHeadless
+        run: cd front && npm test -- --no-watch --no-progress --code-coverage --browsers=ChromeHeadless
 
       # Installation back
       - name: Install back-end dependencies
