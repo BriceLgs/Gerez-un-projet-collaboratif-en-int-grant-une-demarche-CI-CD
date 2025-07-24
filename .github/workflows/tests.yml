@@ -13,7 +13,7 @@ jobs:
       run: npm ci
       working-directory: ./front
     - name: Run Angular tests
-      run: npm test -- --no-watch --no-progress --coverage --browsers=ChromeHeadless
+      run: npm test -- --no-watch --no-progress --code-coverage --browsers=ChromeHeadless
       working-directory: ./front
     - name: Set up Java
       uses: actions/setup-java@v3
