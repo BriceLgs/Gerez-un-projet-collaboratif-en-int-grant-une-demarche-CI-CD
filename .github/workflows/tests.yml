@@ -32,5 +32,6 @@ jobs:
       with:
         name: test-reports
         path: |
-          ./front/coverage/ 
+          ./front/coverage/
           ./back/surefire-reports/
+          ./back/target/site/jacoco/
