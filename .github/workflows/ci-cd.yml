@@ -71,7 +71,7 @@ jobs:
         run: |
           cd back
           mvn sonar:sonar \
-            -Dsonar.projectKey=BobApp \
+            -Dsonar.projectKey=BriceLgsSonar \
             -Dsonar.organization=brice-opc-org \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.branch.name=main \
