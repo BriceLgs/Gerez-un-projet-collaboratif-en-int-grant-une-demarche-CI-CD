@@ -77,7 +77,7 @@ jobs:
             -Dsonar.branch.name=main \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
-      # rapportde couverture
+      # rapport de cuverture
       - name: Generate coverage report
         run: |
           cd back
