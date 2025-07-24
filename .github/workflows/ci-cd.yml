@@ -74,6 +74,7 @@ jobs:
             -Dsonar.projectKey=BobApp \
             -Dsonar.organization=brice-opc-org \
             -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.branch.name=main \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
       # rapport de couverture
@@ -82,7 +83,7 @@ jobs:
           cd back
           mvn jacoco:report
           cd ../front
-          npm run test -- --no-watch --no-progress --coverage --browsers=ChromeHeadless
+          npm run test -- --no-watch --no-progress --code-coverage --browsers=ChromeHeadless
 
       # Build back
       - name: Build back-end
